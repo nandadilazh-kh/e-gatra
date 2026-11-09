@@ -147,7 +147,7 @@ export function MapScreen({ sync, save, onPick, onOpen, onToggleTeacher, onBack 
           <button className="btn btn-sm" onClick={() => onOpen('help')}><Icon.help /> Petunjuk Penggunaan</button>
           <button className="btn btn-sm" onClick={() => onOpen('dev')}><Icon.user /> Profil Pengembang</button>
           <button className="btn btn-sm" onClick={() => onOpen('book')}><Icon.book /> Buku Proyek</button>
-          <button className="btn btn-sm" onClick={onBack}>Ganti Arsitek</button>
+          <button className="btn btn-sm" onClick={onBack}>Keluar</button>
         </div>
       </header>
       {msg && <p role="status" className="m-0 p-3 rounded-xl font-semibold" style={{ background: 'var(--soft-info)' }}>{msg}</p>}

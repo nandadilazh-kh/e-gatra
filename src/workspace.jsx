@@ -262,7 +262,7 @@ export default function Workspace({ sector, mission, lengkapi, save, onExit, onW
     <div className="wrap grid gap-3">
       <header className="flex flex-wrap items-center gap-2 justify-between">
         <div className="flex items-center gap-2 min-w-0">
-          <button className="btn btn-sm" onClick={onExit}><Icon.back /> Peta</button>
+          <button className="btn btn-sm" onClick={onExit}><Icon.back /> Back</button>
           <div className="min-w-0">
             <div className="text-sm font-bold" style={{ color: 'var(--muted)' }}>Sektor {sector} · {SECTORS[sector].name} · Misi {mission.no}/15</div>
             <div className="display text-2xl font-extrabold leading-tight">Target luas: <Eq a={mission.a} b={mission.b} c={mission.c} zero={sector === 4} lengkapi={lengkapi} /></div>
@@ -354,7 +354,7 @@ export default function Workspace({ sector, mission, lengkapi, save, onExit, onW
               <div className="grid gap-1">
                 <span className="text-sm font-bold">Tampilan</span>
                 <div className="seg" role="group" aria-label="Mode tampilan">
-                  <button aria-pressed={view === 'city'} onClick={() => setView('city')}>Mode Kota</button>
+                  <button aria-pressed={view === 'city'} onClick={() => setView('city')}>Mode Daerah</button>
                   <button aria-pressed={view === 'alg'} onClick={() => setView('alg')}>Mode Aljabar</button>
                 </div>
               </div>
